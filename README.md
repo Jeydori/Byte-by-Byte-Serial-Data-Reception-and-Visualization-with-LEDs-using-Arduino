@@ -4,16 +4,16 @@ Demonstrates how a clock pulse functions in a system and the storage of received
 <img width="959" alt="image" src="https://github.com/Jeydori/Byte-by-Byte-Serial-Data-Reception-and-Visualization-with-LEDs-using-Arduino/assets/92672461/abbb65fc-3b95-4b99-a2ae-e947ab789e9c">
 
 
- Purpose: 
+ **Purpose:** 
   The aim is to showcase the reception and accumulation of serial data through clock pulses, forming sets of 8 bits each. The process repeats for subsequent data sets.
 
- Display: 
+ **Display:** 
   The received serial data will be shown as 8-bit characters using LEDs. Upon pressing play, each set will be displayed as a character with a 3-second interval. This activity resembles receiving data bit by bit and presenting it byte by byte. Additionally, it illustrates clock pulse functionality and memory-like bit storage.
 
 
 In this tutorial, we will create an Arduino sketch that demonstrates the reception and visualization of byte-by-byte serial data using LEDs. The objective of this project is to show how serial data can be received and displayed one character (8 bits) at a time using a clock pulse to accumulate the data. This project will also serve as an example of how to use Arduino to interact with external components, like LEDs, and handle serial data.
 
- Components Needed:
+ **Components Needed:**
   1. 1x Arduino board (e.g., Arduino Uno)
   
 <img width="129" alt="image" src="https://github.com/Jeydori/Byte-by-Byte-Serial-Data-Reception-and-Visualization-with-LEDs-using-Arduino/assets/92672461/ec6427ba-f89a-4088-8dd4-c1d55889a79f">
@@ -39,18 +39,18 @@ In this tutorial, we will create an Arduino sketch that demonstrates the recepti
 
 
 
- Step 1: Wiring the Circuit
+ **Step 1: Wiring the Circuit**
 
 Connect the LEDs to pins 5 through 12 on the Arduino board.
 Add current-limiting resistors in series with each LED (e.g., connect the resistor to the positive (long) leg of the LED and the other leg to the Arduino pins).
 Connect three pushbuttons to analog pins A1, A2, and A3, respectively, for clockButton, inputButton, and playButton.
 
- Step 2: Setting Up the Sketch
+ **Step 2: Setting Up the Sketch**
  
 Open the Arduino IDE and create a new sketch. Copy and paste the provided Arduino sketch code into the IDE.
     https://github.com/Jeydori/Byte-by-Byte-Serial-Data-Reception-and-Visualization-with-LEDs-using-Arduino/blob/main/Byte-by-Byte-Serial-Data-Reception-and-Visualization-with-LEDs-using-Arduino.ino
 
- Step 3: Understanding the Code
+ **Step 3: Understanding the Code**
 
   setup() Function:
   
@@ -197,12 +197,12 @@ Open the Arduino IDE and create a new sketch. Copy and paste the provided Arduin
   With a thorough understanding of the code's components, you can now create the circuit and upload the sketch to your Arduino board. Enjoy experimenting
 
 
-  Step 4: Uploading the Sketch
+  **Step 4: Uploading the Sketch**
 
   Connect your Arduino board to your computer using a USB cable. Select the correct board and port from the "Tools" menu in the Arduino IDE. Then, click the "Upload" button to upload the sketch to the Arduino board.
 
 
-  Step 5: Testing the Project
+  **Step 5: Testing the Project**
 
   Once the sketch is uploaded successfully, the Arduino board will start receiving serial data when the inputButton is pressed (keep it pressed to simulate serial data input). The LEDs will light up one by one, representing each bit of the received data. When the playButton is pressed, the stored bytes will be displayed on the LEDs, with a 3-second interval between each byte.
 
